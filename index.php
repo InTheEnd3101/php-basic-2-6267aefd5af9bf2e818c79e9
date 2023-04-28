@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-
 $task = 'backlog';
-
 ?>
 <head>
   <meta charset="utf-8">
