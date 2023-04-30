@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+$task = 'backlog';
+?>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -138,7 +140,8 @@
               </h3>
             </div>
             <div class="card-body connectedSortable" data-status="backlog">
-              <div class="card card-info card-outline" data-task-id="1">
+              <?php if ($task == 'backlog'): ?>
+			  <div class="card card-info card-outline" data-task-id="1">
                 <div class="card-header">
                   <h5 class="card-title">Зробити головну</h5>
                   <div class="card-tools">
@@ -157,9 +160,10 @@
                     <i class="fas fa-file"></i>
                   </a>
                   <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>
-                </div>
-              </div>
-            </div>
+                </div>              
+			  </div>
+            <?php endif; ?>
+			</div>
           </div>
           <div class="card card-row card-primary">
             <div class="card-header">
